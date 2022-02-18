@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+body {
+    background-color: rgb(252, 235, 214);
+}
+
+.pealkiri {
+    color: rgb(226, 113, 132);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative; /*top-right-bottom-left*/
+    animation: pealk;
+    animation-duration: 3s;
+    
+}
+@keyframes pealk {
+    0% {top: -250px}
+    100% {top: 0}
+}
+.koostisosad {
+    border: 1px solid rgb(163, 153, 153);
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+img {
+    border-radius: 8px;
+    width: 250px;
+    position: relative;
+    animation: pilt;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes pilt {
+    0% {left: 1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+.koostisosad-table {
+    border: 1px solid darkcyan;
+    margin: 0 auto;
+    animation: tabel;
+    animation-duration: 3s;
+    position: relative;
+}
+
+@keyframes tabel {
+    0% {right: 1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
+}
+
+.valmistamine {
+    border: 1px solid gray;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.valmistamine ol {
+    border: 1px solid palevioletred;
+    margin: 0 auto;
+    width: 75%;
+    color: rgb(75, 29, 29);
+}
